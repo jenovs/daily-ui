@@ -132,7 +132,15 @@ input[type="text"]:focus {
     text-align: center;
     margin-left: 0;
     padding: 0;
+    /*width: 80%;*/
+  }
+
+  .form-note {
     width: 80%;
   }
 
+  .password-note {
+    width: 100%;
+    color: red;
+  }
 }
