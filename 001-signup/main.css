@@ -1,0 +1,138 @@
+:root {
+  --left-margin: 21px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(43, 49, 55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+a {
+  color: #0366d6;
+}
+
+.form-main {
+  box-sizing: border-box;
+  background-color: rgb(250, 251, 252);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 464px;
+  line-height: 24px;
+  padding: 24px;
+  padding-bottom: 32px;
+  text-align: center;
+  width: 430px;
+}
+
+.form-main > label {
+  box-sizing: border-box;
+  color: rgb(88, 96, 105);
+  align-self: flex-start;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: var(--left-margin);
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+
+.form-main > p {
+  color: #6a737d;
+  font-size: 12px;
+}
+
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(209, 213, 218);
+  border-radius: 5px;
+  font-size: 16px;
+  height: 46px;
+  padding: 10px;
+  line-height: 20px;
+  height: 46px;
+  width: 340px;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgb(33, 136, 255);
+}
+
+.btn-primary {
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  height: 46px;
+  width: 340px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(38, 159, 66);
+  background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
+}
+
+.password-note {
+  align-self: flex-start;
+  margin-left: var(--left-margin);
+  margin-bottom: 16px;
+}
+
+.form-note {
+  align-self: flex-start;
+  line-height: 18px;
+  margin-left: var(--left-margin);
+  margin-right: var(--left-margin);
+  margin-top: 5px;
+}
+
+@media (max-width: 430px) {
+  a {
+    color: #fff;
+  }
+
+  .form-main {
+    background-color: rgb(43, 49, 55);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-main > label {
+    display: none;
+  }
+
+  input[type="text"] {
+    margin-bottom: 16px;
+  }
+
+  .form-main > input {
+    width: 90%;
+    min-width: 200px;
+  }
+
+  .form-main > p {
+    align-self: center;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    width: 80%;
+  }
+
+}

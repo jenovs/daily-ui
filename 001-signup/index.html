@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <main>
+    <form action="javascript:handleSubmit()" class="form-main">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Pick a username">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Your email address">
+      <label for="password">Password</label>
+      <input type="text" id="password" placeholder="Create a password">
+      <p class="password-note">Use at least one letter, one numeral, and seven characters.</p>
+      <input type="submit" class="btn-primary" value="Sign up for GitHub">
+      <p class="form-note">By clicking "Sign up for GitHub", you agree to our <a>terms of service</a> and <a>privacy policy</a>. We’ll occasionally send you account related emails.</p>
+    </form>
+  </main>
+  <script type="text/javascript">
+    function handleSubmit(e) {
+      console.log('submitted');
+    }
+  </script>
+</body>
+</html>
