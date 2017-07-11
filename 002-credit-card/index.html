@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Credit card checkout form for Daily UI challenge."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>Credit Card Checkout</title>
+</head>
+<body>
+  <main>
+    <h1>Enter your card details</h1>
+    <form action="javascript:handleSubmit()" class="form-main">
+      <label for="card-number">Card Number</label>
+      <input
+        type="text"
+        id="card-number"
+        inputmode="numeric"
+        pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}"
+        placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;"
+        required>
+      <label for="holder">Card Holder</label>
+      <input
+        type="text"
+        id="holder"
+        pattern="[A-Za-z]+"
+        title="Letters only"
+        class="card-holder"
+        spellcheck="false"
+        placeholder="Name Surname"
+        required>
+      <div class="date-and-cvc">
+        <div>
+          <label for="expiration-date">Expiration date</label>
+          <div>
+            <input type="number" min="1" max="12" placeholder="MM" class="num-input" required> /
+            <input type="number" min="17" max="99" placeholder="YY" class="num-input" required>
+          </div>
+        </div>
+        <div>
+          <label for="cvc">CVC</label>
+          <div>
+            <input type="number" max="999" class="cvc-input" required>
+          </div>
+        </div>
+      </div>
+      <input type="submit" class="btn-primary" value="Submit and pay">
+    </form>
+  </main>
+  <script type="text/javascript">
+  function handleSubmit(e) {
+  console.log('submitted');
+}
+</script>
+  <script src="./main.js"></script>
+</body>
+</html>
