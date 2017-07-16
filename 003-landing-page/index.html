@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>Travel Agency</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container__hero">
+      <header class="hero-header">
+        <div class="hero-header__logo">Logo</div>
+        <nav class="hero-header__nav">
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="hero-header__nav-items" id="navbar-links">
+            <li>Home</li>
+            <li>Destinations</li>
+            <li>How it works</li>
+            <li>Login</li>
+            <li>Sign Up</li>
+            <li>EN</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="search-container">
+        <div class="search-title">
+          Book your perfect holiday rental
+        </div>
+        <form action="javascript:(e)=>e.preventDefault()" class="search-container__form">
+          <div class="form__input-label form__input-destination">
+            <label for="input-destination">Where do you want to go?</label>
+            <input type="search" placeholder="Country, city" id="input-destination" required>
+          </div>
+          <div class="form__date-inputs">
+            <div class="form__input-label">
+              <label for="input-date-in">Check In</label>
+              <input type="date" id="input-date-in" required>
+            </div>
+            <div class="form__input-label">
+              <label for="input-date-out">Check Out</label>
+              <input type="date" id="input-date-out" required>
+            </div>
+          </div>
+          <div class="form__input-label">
+            <label for="input-guests">Guests</label>
+            <input type="number" id="input-guests" placeholder="Number of guests" required>
+          </div>
+          <input type="submit" value="Submit" class="form__submit-btn">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
